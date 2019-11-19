@@ -14,20 +14,18 @@ h1{
 }
 #form-container{
     display: flex;
-    max-width: 30%;
+    width: 35%;
     border: dotted goldenrod 4px;
-    margin-left: 2%;
     background-color: #570000;
     color: white;
     padding: 1em;
 }
-#sign-up-box{
+#signup {
     border: dotted goldenrod 4px;
-    margin-left: 50%;
     background-color: #570000;
     color: white;
     padding: 1em;
-
+    width: 35%;
 }
 .carousel-caption {
     margin-right: 40%;
@@ -35,18 +33,21 @@ h1{
 }
 
 .carousel-item {
-    margin-left: 20%;
+    margin-left: 18%;
 }
 .carousel-item>img{
     height: 80vh;
     border-radius: 10%;
     border: 1px solid darkred;
-    /*width: 50%;*/
+    width: 65%;
     /*margin: auto;*/
 }
 
 .card-img-top>img {
     height: 200px;
+    padding: 2%;
+    border: dotted goldenrod 2px;
+
 }
 
 #container {
@@ -86,8 +87,10 @@ h1{
 .card {
     width: 25%;
     height: 300px;
-    border: 2px solid steelblue;
+    border: 1px solid white;
     border-radius: 5%;
+    background-color: #02111B;
+    color: white;
 }
 .card-body{
     text-align: center;

@@ -82,30 +82,47 @@
                 <option value="5">5</option>
             </select>
             <div class="modal-footer">
-                <button type="button" id="ratingchange" class="btn btn-primary">Save changes</button>
+                <button type="button" id="ratingchange" data-dismiss="modal" class="btn btn-primary">Save changes</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
-
-<div id="form-container">
-    <form id="addmovie">
+<div class="container-fluid d-flex justify-content-between">
+    <div id="form-container">
+        <form id="addmovie">
+            <div class="form-group">
+                <label for="movietitle">Movie Title</label>
+                <input class="form-control" id="movietitle" rows="3" placeholder="Would you like to add a movie?">
+            </div>
+            <div class="form-group">
+                <label for="movierating">Rate this movie!</label>
+                <select class="form-control" id="movierating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button id="buttonadd">Add your movie!</button>
+            </div>
+        </form>
+    </div>
+    <form id="signup">
         <div class="form-group">
-            <label for="movietitle">Movie Title</label>
-            <input class="form-control" id="movietitle" rows="3" placeholder="Would you like to add a movie?">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="movieman@movies.com">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
-            <label for="movierating">Rate this movie!</label>
-            <select class="form-control" id="movierating">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <button id="buttonadd">Add your movie!</button>
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+        </div>
+        <button id="signinbutton" class="btn btn-primary">Sign in</button>
     </form>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -117,6 +134,7 @@
         $('body').on('click', '.editbutton', function() {
           $("#editmodal").modal();
         });
+
     });
 
 
