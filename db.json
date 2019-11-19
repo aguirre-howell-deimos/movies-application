@@ -2,18 +2,13 @@
   "movies": [
     {
       "title": "Casablanca",
-      "rating": "3",
+      "rating": "5",
       "id": 1
     },
     {
       "title": "Star Wars: A New Hope",
       "rating": "4",
       "id": 2
-    },
-    {
-      "title": "Stephen King's It",
-      "rating": "4",
-      "id": 3
     }
   ]
 }
