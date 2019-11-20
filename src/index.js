@@ -158,8 +158,7 @@ $(window).on("load", function(){
       let confirmvalue = confirm("Are you sure?");
       if (confirmvalue === true) {
         deleteMovie(divid)
-      }
-      ;
+      };
       getMovies().then((movies) => {
         $("#container").empty();
         movies.forEach(({title, rating, id}) => {
